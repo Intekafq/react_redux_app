@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+/* ///////////////////////////////////////////////////////////////// MY Code //////////////////////////////////////////////////////////// */
+.cart-wrapper {
+  height: 150px;
+  width: 500px;
+  border:  1px solid #ccc;
+  margin-left: 10%;
+}
+.item {
+  float: left;
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+}
+.img-wrapper img{
+  height: 100px;
+  width: 100px;
+}
+.btn-wrapper button{
+
+  background-color: aquamarine;
+  border: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  color: black;
+  box-shadow: #000 0px 1px 5px;
+}
+
+.add-cart img{
+  width: 50px;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  padding: 10px;
+}
