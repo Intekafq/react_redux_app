@@ -38,7 +38,7 @@
 }
 /* ///////////////////////////////////////////////////////////////// MY Code //////////////////////////////////////////////////////////// */
 .cart-wrapper {
-  height: 150px;
+  height: 200px;
   width: 500px;
   border:  1px solid #ccc;
   margin-left: 10%;
@@ -61,6 +61,8 @@
   border-radius: 4px;
   color: black;
   box-shadow: #000 0px 1px 5px;
+  display: flex;
+  
 }
 
 .add-cart img{
@@ -69,4 +71,21 @@
   right: 1%;
   top: 1%;
   padding: 10px;
+}
+
+.cart-count{
+  
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  z-index: 1;
+  background-color: red;
+  width: 25px;
+  height: 23px;
+  border-radius: 50%;
+  color: #fff;
+}
+.item{
+
+  display: flex;
 }

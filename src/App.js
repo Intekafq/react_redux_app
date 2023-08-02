@@ -3,9 +3,11 @@ import './App.css';
 import User from './component/User';
 import Home from './component/Home';
 import HomeContainer from './container/HomeContainer'
+import HeaderContainer from './container/HeaderContainer'
 function App() {
   return (
     <div className="App">
+      <HeaderContainer />
       <HomeContainer />
     </div>
   );

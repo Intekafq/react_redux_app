@@ -1,11 +1,10 @@
 import React from "react";
-
-function Home() {
+import Button from 'react-bootstrap/Button';
+function Home(props) {
+  console.warn("home",props)
   return (
     <div>
-          <div className="add-cart">
-        <img src="https://static.vecteezy.com/system/resources/previews/000/351/328/original/vector-add-to-cart-icon.jpg" alt="" />
-      </div>
+          
       <h1>Home Component</h1>
     
       <div className="cart-wrapper">
@@ -21,7 +20,11 @@ function Home() {
             <span>Price : 2500 $</span>
         </div>
         <div className="btn-wrapper item">
-            <button>Add to cart</button>
+            <Button  onClick={()=>props.addToCartHandler({price: 2500,name: 'iphone 14 pro max'})}>Add to cart</Button>
+            
+            <Button  onClick={()=>props.removeToCartHandler({price: 2500,name: 'iphone 14 pro max'})}>Remove to cart</Button>
+            
+
         </div>
       </div>
     </div>
